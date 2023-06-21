@@ -16,9 +16,11 @@
                     $estado = $variablesUsuario->Estado;
                     if ($estado == "Inactivo") {
                         header("Location: ../../index.html?error=4");
+                    }else{
+                        //ingresar a la pagina generica
+                        header("Location: existeSesion.php");                    
                     }
-                    //ingresar a la pagina generica
-                    header("Location: existeSesion.php");                    
+                    
                 }else{
                     //Usuario no existe o la contraseña es incorrecta
                     header("Location: ../../index.html?error=1");

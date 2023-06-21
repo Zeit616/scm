@@ -1,7 +1,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4 correccionSidebar">
     <!-- Brand Logo -->
         <a href="vistaGenerica.php" class="brand-link">
-            <img src="../../img/favicon.png" alt="Leche Gloria Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+            <img src="../../img/LogoSCM.png" alt="Leche Gloria Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
             <span class="brand-text font-weight-light">Periodista</span>
         </a>
     <!-- Fin Brand Logo -->
