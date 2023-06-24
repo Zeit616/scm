@@ -12,7 +12,11 @@
         <!-- Estilos Necesarios -->
             
             <!-- Google Font: Source Sans Pro -->
-                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">            
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">   
+            <!-- Css DataTables -->                
+                <link rel="stylesheet" href="../../css/dataTables/dataTables.bootstrap4.min.css">    
+                <link rel="stylesheet" href="../../css/dataTables/responsive.bootstrap4.min.css">
+                <link rel="stylesheet" href="../../css/dataTables/buttons.bootstrap4.min.css">
             <!-- Theme style -->
                 <link rel="stylesheet" href="../../css/adminlte/adminlte.min.css">
             <!-- Correcciones del tema principal-->
@@ -47,7 +51,7 @@
             <!-- Bootstrap 5.3 -->
                 <script src="../../js/boostrap5/bootstrap.bundle.min.js"></script>
             <!-- Font Awsome -->
-                <script src="https://kit.fontawesome.com/9de8b34569.js" crossorigin="anonymous"></script>
+                <script src="https://kit.fontawesome.com/9de8b34569.js" crossorigin="anonymous"></script>            
             <!-- AdminLTE App -->
                 <script src="../../js/adminlte/adminlte.min.js"></script>
             <!-- Cargar paginas en vista generica -->    
