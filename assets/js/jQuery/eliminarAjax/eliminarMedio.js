@@ -18,18 +18,12 @@ $(document).ready(function(){
                 processData: false,
                 //dataType: "json",
                 success: function(respuesta) {  
-                    if (respuesta == "1") {                        
-                        //recargar dataTable
-                            var recarga = $("#tablaMedios").DataTable();
-                            recarga.ajax.reload();
-                        //toast de registro exitoso    
-                            console.log("registro exitoso");
-                            aceptado("Medio eliminado");
-                    } else {                        
-                        //toast de registro fallido
-                            console.log("error");
-                            rechazado(respuesta);
-                    }
+                    //recargar dataTable
+                        var recarga = $("#tablaMedios").DataTable();
+                        recarga.ajax.reload();
+                    //toast de registro exitoso    
+                        console.log("registro exitoso");
+                        aceptado("Medio eliminado");
                 },
             });
         });        
