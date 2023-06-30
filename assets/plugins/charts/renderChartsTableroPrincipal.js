@@ -1,5 +1,5 @@
 $(function () {
-  var barChartCanvas = $('#barChart').get(0).getContext('2d');
+  var barChartCanvas = $('#ImpactoAnualPositivoNegativoBarChart').get(0).getContext('2d');
 
   // Realizar solicitud AJAX al archivo PHP
   $.ajax({
@@ -7,7 +7,6 @@ $(function () {
     type: 'GET',
     dataType: 'json',
     success: function (data) {
-      console.log(data);
       // Los datos se han recuperado exitosamente
       var barChartData = {
         labels: data.labels,

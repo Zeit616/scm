@@ -41,13 +41,7 @@
                                         <i class="fa-regular fa-circle"></i>
                                         <p>Fechas y medios</p>
                                     </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link" onclick="CargarPlantilla('MesMedios.php', 'content-wrapper')">
-                                        <i class="fa-regular fa-circle"></i>
-                                        <p>Mes y medios</p>
-                                    </a>
-                                </li>
+                                </li>                                
                             </ul>
                         </li>  
                         <li class="nav-item">

@@ -13,6 +13,15 @@
     position: relative;
     height: 100%;
 }
+.CompañiaPadreCel{
+    display: none;
+}
+.CompañiaPadre{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+}
 
 .blur{
     position: absolute;
@@ -145,6 +154,11 @@
 }
 
 @media (max-width: 699px) {
+    body{
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+    }
     .cajaPromocion{
         display: none;
     }
@@ -172,5 +186,13 @@
         width: 100%;
         background: rgba(255, 255, 255, 0.308);        
         backdrop-filter: blur(5px);
+    }
+    .CompañiaPadreCel{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        z-index: 1;
     }
 }  

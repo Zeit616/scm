@@ -34,7 +34,7 @@
                           </div>
                           <div class="card-body">
                               <div class="chart">
-                                  <canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                                  <canvas id="ImpactoAnualPositivoNegativoBarChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
                               </div>
                           </div>
                         </div>
@@ -49,5 +49,5 @@
       <!-- Script Recursos necesarios para los chart -->
           <script src="../../plugins/charts/Chart.min.js"></script>
       <!-- Script renderizado de Charts -->
-          <script src="../../plugins/charts/renderChartTableroPrincipal.js"></script>
+          <script src="../../plugins/charts/renderChartsTableroPrincipal.js"></script>
   <!-- Fin Scripts Necesarios -->                       
