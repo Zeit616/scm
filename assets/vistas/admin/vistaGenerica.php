@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
     <head>
 
         <meta charset="utf-8">
@@ -62,5 +62,9 @@
                 <script src="../../js/sweetAlertJS/sweetalert2.all.min.js"></script>
             <!-- Script avisos Sweet Alert -->
                 <script src="../../js/sweetAlertJS/alertasSweeAlertFrontEnd.js"></script>
+            <!-- Script Recursos necesarios para los chart -->
+                <script src="../../plugins/charts/Chart.min.js"></script>
+            <!-- Script renderizado de Charts -->
+                <script src="../../plugins/charts/renderChartTableroPrincipal.js"></script>
         <!-- Fin Scripts Necesarios -->
-    </html>
+</html>
