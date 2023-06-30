@@ -9,3 +9,4 @@
 - Mejorar input de fuentes adicionales (tipo de input url)
 - Mejorar niput para suir archivo deseado
 - Añadir validacion de dos pasos
+- Cambiar vista de noticia, para mejorar la velocidad de carga( haciendo que solo cargue lo que muestra el datatable, y si se quiere ver una noticia, que haga una peticion al servidor con el codigo de la noticia)

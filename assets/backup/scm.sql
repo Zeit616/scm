@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-06-2023 a las 22:48:40
+-- Tiempo de generación: 26-06-2023 a las 03:44:08
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -52,7 +52,8 @@ CREATE TABLE `contenedordecodigos` (
 --
 
 INSERT INTO `contenedordecodigos` (`Id`, `CodPerteneciente`, `CodAlmacenado`) VALUES
-(1, 'CodMedio', 0);
+(1, 'CodMedio', 0),
+(2, 'CodNoticia', 0);
 
 -- --------------------------------------------------------
 
@@ -64,6 +65,27 @@ CREATE TABLE `medios` (
   `CodMedio` varchar(50) NOT NULL,
   `Nombre` text NOT NULL,
   `Categoria` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `noticia`
+--
+
+CREATE TABLE `noticia` (
+  `CodNoticia` varchar(50) NOT NULL,
+  `FechaNoticia` date NOT NULL,
+  `Medio` varchar(50) NOT NULL,
+  `Titular` text NOT NULL,
+  `Espacio` text NOT NULL,
+  `Periodista` text NOT NULL,
+  `Impacto` varchar(50) NOT NULL,
+  `ComentarioArticulo` text NOT NULL,
+  `Recomendaciones` text NOT NULL,
+  `FuenteNoticia` text NOT NULL,
+  `ArchivoAdjunto` text NOT NULL,
+  `EnlaceAdicional` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -88,7 +110,7 @@ CREATE TABLE `usuarios` (
 INSERT INTO `usuarios` (`id`, `Nombre`, `Usuario`, `Contraseña`, `Rol`, `Estado`) VALUES
 (1, 'administrador', 'admin', '123', 'Admin', 'Activado'),
 (2, 'periodista', 'periodista', '123', 'Periodista', 'Activado'),
-(3, 'usuario', 'usuario', '123', 'Usuario', 'Activo');
+(3, 'usuario', 'usuario', '123', 'Usuario', 'Activado');
 
 --
 -- Índices para tablas volcadas
@@ -113,6 +135,12 @@ ALTER TABLE `medios`
   ADD PRIMARY KEY (`CodMedio`);
 
 --
+-- Indices de la tabla `noticia`
+--
+ALTER TABLE `noticia`
+  ADD PRIMARY KEY (`CodNoticia`);
+
+--
 -- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
@@ -126,19 +154,19 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `agenda`
 --
 ALTER TABLE `agenda`
-  MODIFY `CodContacto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `CodContacto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `contenedordecodigos`
 --
 ALTER TABLE `contenedordecodigos`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -29,9 +29,48 @@ $(document).ready(function(){
             $("#EditarComentario").val(data[7]);
             $("#EditarRecomendaciones").val(data[8]);
             $("#EditarFuente").val(data[9]);
-            $("#EditarEnlaceAdicional").val(data[11]);        
+            $("#EditarEnlaceAdicional").val(data[11]);
     });
     $('#cerrarModalEditarNoticia').click(function() {
         $('#modalEditarNoticia').modal('hide');
+    }); 
+    //Abrir-Cerrar modal ver noticia
+    $("#tablaNoticias").on("click", ".botonVerNoticia",function(){
+        //Abrir modal ver noticia
+            $("#modalVerNoticia").modal("show"); 
+        //Llenar modal de la noticia con la informacion
+            var tablaNoticias = $("#tablaNoticias").DataTable();
+            if(tablaNoticias.row(this).child.isShown()) {
+                var data = tablaNoticias.row(this).data();                
+            } else {                
+                var data = tablaNoticias.row($(this).parents('tr')).data(); //OBTENER EL ARRAY CON LOS DATOS DE CADA COLUMNA DEL DATATABLE
+            };
+            var CodNoticia = data[0];
+            var Fecha = data[1];
+            var Medio = data[2];
+            var Titular = data[3];
+            var Espacio = data[4];
+            var Periodista = data[5];
+            var Impacto = data[6];
+            var Comentarios = data[7];
+            var Recomendaciones = data[8];
+            var Fuente = data[9];
+            var ArchivoAdjunto = data[10];
+            var EnlaceAdicional = data[11];
+            $("#idCodigoDescargar").val(ArchivoAdjunto);
+            $("#tituloDelModal").html('"' + Titular + '"'); 
+            $("#VerFechaNoticia").val(Fecha);
+            $("#VerTipoMedioNoticia").val(Medio);
+            $("#VerTitularNoticia").val(Titular);
+            $("#VerEspacioNoticia").val(Espacio);
+            $("#VerPeriodistaNoticia").val(Periodista);
+            $("#VerImpactoNoticia").val(Impacto);
+            $("#VerComentarioNoticia").val(Comentarios);
+            $("#VerRecomendacionesNoticia").val(Recomendaciones);
+            $("#VerFuenteNoticia").val(Fuente);
+            $("#VerFuentesAdicionalesNoticia").val(EnlaceAdicional);
+    }); 
+    $('#cerrarModalVerNoticia').click(function() {
+        $('#modalVerNoticia').modal('hide');
     }); 
 });

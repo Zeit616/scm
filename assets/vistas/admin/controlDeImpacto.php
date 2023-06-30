@@ -166,6 +166,68 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    <!-- Modal "ver noticia" -->
+                        <div class="modal fade" id="modalVerNoticia">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-primary">
+                                        <h4 class="modal-title" id="tituloDelModal"></h4>
+                                        <button type="button" style="color: white;" class="close" id="cerrarModalVerNoticia">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-secondary ">                                    
+                                        <div class="card-body row">
+                                            <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
+                                                <label for="VerFechaNoticia" class="form-label">Fecha de la noticia</label>
+                                                <input type="date" class="form-control" id="VerFechaNoticia" disabled>
+                                            </div>
+                                            <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
+                                                <label for="VerTipoMedioNoticia" class="form-label">Medio</label>
+                                                <input type="text" class="form-control" id="VerTipoMedioNoticia" disabled>
+                                            </div>
+                                            <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
+                                                <label for="VerTitularNoticia">Titular</label>
+                                                <input type="text" class="form-control" id="VerTitularNoticia" disabled>
+                                            </div>
+                                            <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
+                                                <label for="VerEspacioNoticia">Espacio</label>
+                                                <textarea class="text-area form-control" id="VerEspacioNoticia" cols="10" rows="10" disabled></textarea>
+                                            </div>
+                                            <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
+                                                <label for="VerPeriodistaNoticia">Periodista</label>
+                                                <input type="text" class="form-control" id="VerPeriodistaNoticia" disabled>
+                                            </div>
+                                            <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
+                                                <label for="VerImpactoNoticia" class="form-label">Impacto</label>
+                                                <input type="text" class="form-control" id="VerImpactoNoticia" disabled>                                                
+                                            </div>
+                                            <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
+                                                <label for="VerComentarioNoticia">Comentarios del articulo</label>
+                                                <textarea class="text-area form-control" id="VerComentarioNoticia" cols="10" rows="10" disabled></textarea>
+                                            </div>
+                                            <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
+                                                <label for="VerRecomendacionesNoticia">Recomendaciones del articulo</label>
+                                                <textarea class="text-area form-control" id="VerRecomendacionesNoticia" cols="10" rows="10" disabled></textarea>
+                                            </div>
+                                            <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
+                                                <label for="VerFuenteNoticia">Fuente de la noticia</label>
+                                                <input type="text" class="form-control" id="VerFuenteNoticia" disabled>
+                                            </div>
+                                            <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
+                                                <label for="DescargarArchivoAdjunto">Archivo adjunto</label>
+                                                <input type="text" id="idCodigoDescargar" style="display: none;" disabled>
+                                                <button type="submit" class="form-control btn btn-success btn-lg" id="DescargarArchivoAdjunto">Archivo adjunto</button>
+                                            </div>
+                                            <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
+                                                <label for="VerFuentesAdicionalesNoticia">Fuentes adicionales</label>
+                                                <input type="text" class="form-control" id="VerFuentesAdicionalesNoticia" disabled>
+                                            </div>
+                                        </div>                                            
+                                    </div>
+                                </div>
+                            </div>
                         </div> 
                     <!-- Tarjeta colapsable de filtrar búsqueda -->                
                         <div class="col-12">
@@ -298,4 +360,6 @@
         <script src="../../js/jQuery/dataTables/dataTableNoticias.js"></script>
     <!-- Filtros de busqueda -->
         <script src="../../js/jQuery/dataTables/filtroBusquedaDataTable/busquedaDataTableNoticias.js"></script>
+    <!-- Descargar archivos adjuntos -->
+        <script src="../../js/descarga/descargaArchivoNoticia.js"></script>
 <!-- Fin Scripts Necesarios para funcionamiento --> 
