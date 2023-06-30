@@ -45,6 +45,9 @@
     <!-- Fin contenido principal -->
 </div>
 
-<!-- Scripts Necesarios para funcionamiento -->
-
-<!-- Fin Scripts Necesarios para funcionamiento -->                        
+  <!-- Scripts Necesarios -->            
+      <!-- Script Recursos necesarios para los chart -->
+          <script src="../../plugins/charts/Chart.min.js"></script>
+      <!-- Script renderizado de Charts -->
+          <script src="../../plugins/charts/renderChartTableroPrincipal.js"></script>
+  <!-- Fin Scripts Necesarios -->                       

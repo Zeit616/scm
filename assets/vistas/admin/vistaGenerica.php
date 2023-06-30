@@ -23,6 +23,24 @@
                 <link rel="stylesheet" href="../../css/adminlte/correcciones.css"> 
             <!--Swet Alert Estilos-->
                 <link rel="stylesheet" href="../../css/sweetAlert2/sweetalert2.min.css">                  
+        
+        <!-- Estilos Necesarios -->
+
+        <!-- Scripts Necesarios -->
+            <!-- jQuery -->
+            <script src="../../js/jQuery/jquery-3.7.0.min.js"></script>
+            <!-- Bootstrap 5.3 -->
+                <script src="../../js/boostrap5/bootstrap.bundle.min.js"></script>
+            <!-- Font Awsome -->
+                <script src="https://kit.fontawesome.com/9de8b34569.js" crossorigin="anonymous"></script>            
+            <!-- AdminLTE App -->
+                <script src="../../js/adminlte/adminlte.min.js"></script>
+            
+            <!-- Recursos necesarios para Sweet Alert -->
+                <script src="../../js/sweetAlertJS/sweetalert2.all.min.js"></script>
+            <!-- Script avisos Sweet Alert -->
+                <script src="../../js/sweetAlertJS/alertasSweeAlertFrontEnd.js"></script>
+        <!-- Fin Scripts Necesarios -->
     </head>
     <body class="hold-transition sidebar-mini">
         <div class="wrapper"><!-- Div que contiene todo -->
@@ -45,26 +63,11 @@
             <!-- Fin footer -->
         </div>
     </body>
-        <!-- Scripts Necesarios -->
-            <!-- jQuery -->
-                <script src="../../js/jQuery/jquery-3.7.0.min.js"></script>
-            <!-- Bootstrap 5.3 -->
-                <script src="../../js/boostrap5/bootstrap.bundle.min.js"></script>
-            <!-- Font Awsome -->
-                <script src="https://kit.fontawesome.com/9de8b34569.js" crossorigin="anonymous"></script>            
-            <!-- AdminLTE App -->
-                <script src="../../js/adminlte/adminlte.min.js"></script>
+        <!-- Scripts Necesarios -->            
             <!-- Cargar paginas en vista generica -->    
                 <script src="../../js/renders/renderPaginas.js"></script>
             <!-- Mostrar menu seleccionado -->    
                 <script src="../../js/renders/selectorAside.js"></script>
-            <!-- Recursos necesarios para Sweet Alert -->
-                <script src="../../js/sweetAlertJS/sweetalert2.all.min.js"></script>
-            <!-- Script avisos Sweet Alert -->
-                <script src="../../js/sweetAlertJS/alertasSweeAlertFrontEnd.js"></script>
-            <!-- Script Recursos necesarios para los chart -->
-                <script src="../../plugins/charts/Chart.min.js"></script>
-            <!-- Script renderizado de Charts -->
-                <script src="../../plugins/charts/renderChartTableroPrincipal.js"></script>
         <!-- Fin Scripts Necesarios -->
+        
 </html>
