@@ -54,7 +54,7 @@
   
             <!-- Contenedor de pagina Principal -->
                 <div class="content-wrapper">                    
-                    <?php include "tableroPrincipal.php"; ?>
+                    <?php include "controlImpacto.php"; ?>
                 </div>
             <!-- Fin contenedor de pagina Principal -->
 

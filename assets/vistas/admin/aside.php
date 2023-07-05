@@ -12,18 +12,18 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column nav-child-indent" data-widget="treeview" role="menu" data-accordion="false">                    
                         <li class="nav-item">
-                            <a href="#" class="nav-link active" onclick="CargarPlantilla('tableroPrincipal.php', 'content-wrapper')">
+                            <a href="#" class="nav-link active" onclick="CargarPlantilla('controlImpacto.php', 'content-wrapper')">
                                 <i class="fa-solid fa-cube"></i>
                                 <p>
-                                    Tablero principal                                  
+                                    Control de impacto                             
                                 </p>
                             </a>
                         </li> 
                         <li class="nav-item">
-                            <a href="#" class="nav-link " onclick="CargarPlantilla('controlDeImpacto.php', 'content-wrapper')">
+                            <a href="#" class="nav-link " onclick="CargarPlantilla('monitoreo.php', 'content-wrapper')">
                                 <i class="fa-solid fa-clipboard-check"></i>
                                 <p>
-                                    Control de impacto
+                                    Monitoreo
                                 </p>
                             </a>
                         </li>                        

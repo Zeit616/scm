@@ -18,9 +18,9 @@
 }
 .CompañiaPadre{
     position: absolute;
-    bottom: 0;
+    bottom: 25px;
     right: 0;
-    width: 50%;
+    width: 15%;
 }
 
 .blur{
@@ -187,10 +187,13 @@
         background: rgba(255, 255, 255, 0.308);        
         backdrop-filter: blur(5px);
     }
+    .CompañiaPadre{
+        display: none;
+    }
     .CompañiaPadreCel{
         display: block;
         position: absolute;
-        top: 0;
+        bottom: 15px;
         right: 0;
         width: 50%;
         z-index: 1;
