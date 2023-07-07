@@ -5,7 +5,7 @@
     if(!empty($_POST["BotonPresionado"])){
         if(!empty($_POST["usuario"]) && !empty($_POST["contraseña"])){
             $usuario = preg_replace($patron, "", $_POST["usuario"]);
-            $contraseña = preg_replace($patron, "", $_POST["contraseña"]);
+            $contraseña = $_POST["contraseña"];
             $stmt = conection::conectar()->prepare("SELECT * FROM usuarios WHERE Usuario = '$usuario' AND Contraseña = '$contraseña'");
             if ($stmt->execute()){
                 if($stmt -> rowCount() > 0){

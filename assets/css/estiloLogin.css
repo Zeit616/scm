@@ -194,7 +194,8 @@
         display: block;
         position: absolute;
         bottom: 15px;
-        right: 0;
+        transform: translateX(50%);
+        right: 50%;
         width: 50%;
         z-index: 1;
     }

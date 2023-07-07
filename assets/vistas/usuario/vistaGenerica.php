@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
     <head>
 
         <meta charset="utf-8">
@@ -12,13 +12,35 @@
         <!-- Estilos Necesarios -->
             
             <!-- Google Font: Source Sans Pro -->
-                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">            
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">   
+            <!-- Css DataTables -->                
+                <link rel="stylesheet" href="../../css/dataTables/dataTables.bootstrap4.min.css">    
+                <link rel="stylesheet" href="../../css/dataTables/responsive.bootstrap4.min.css">
+                <link rel="stylesheet" href="../../css/dataTables/buttons.bootstrap4.min.css">
             <!-- Theme style -->
                 <link rel="stylesheet" href="../../css/adminlte/adminlte.min.css">
             <!-- Correcciones del tema principal-->
                 <link rel="stylesheet" href="../../css/adminlte/correcciones.css"> 
             <!--Swet Alert Estilos-->
                 <link rel="stylesheet" href="../../css/sweetAlert2/sweetalert2.min.css">                  
+        
+        <!-- Estilos Necesarios -->
+
+        <!-- Scripts Necesarios -->
+            <!-- jQuery -->
+            <script src="../../js/jQuery/jquery-3.7.0.min.js"></script>
+            <!-- Bootstrap 5.3 -->
+                <script src="../../js/boostrap5/bootstrap.bundle.min.js"></script>
+            <!-- Font Awsome -->
+                <script src="https://kit.fontawesome.com/9de8b34569.js" crossorigin="anonymous"></script>            
+            <!-- AdminLTE App -->
+                <script src="../../js/adminlte/adminlte.min.js"></script>
+            
+            <!-- Recursos necesarios para Sweet Alert -->
+                <script src="../../js/sweetAlertJS/sweetalert2.all.min.js"></script>
+            <!-- Script avisos Sweet Alert -->
+                <script src="../../js/sweetAlertJS/alertasSweeAlertFrontEnd.js"></script>
+        <!-- Fin Scripts Necesarios -->
     </head>
     <body class="hold-transition sidebar-mini">
         <div class="wrapper"><!-- Div que contiene todo -->
@@ -32,7 +54,7 @@
   
             <!-- Contenedor de pagina Principal -->
                 <div class="content-wrapper">                    
-                    <?php include "tableroPrincipal.php"; ?>
+                    <?php include "controlImpacto.php"; ?>
                 </div>
             <!-- Fin contenedor de pagina Principal -->
 
@@ -41,22 +63,11 @@
             <!-- Fin footer -->
         </div>
     </body>
-        <!-- Scripts Necesarios -->
-            <!-- jQuery -->
-                <script src="../../js/jQuery/jquery-3.7.0.min.js"></script>
-            <!-- Bootstrap 5.3 -->
-                <script src="../../js/boostrap5/bootstrap.bundle.min.js"></script>
-            <!-- Font Awsome -->
-                <script src="https://kit.fontawesome.com/9de8b34569.js" crossorigin="anonymous"></script>
-            <!-- AdminLTE App -->
-                <script src="../../js/adminlte/adminlte.min.js"></script>
+        <!-- Scripts Necesarios -->            
             <!-- Cargar paginas en vista generica -->    
                 <script src="../../js/renders/renderPaginas.js"></script>
             <!-- Mostrar menu seleccionado -->    
                 <script src="../../js/renders/selectorAside.js"></script>
-            <!-- Recursos necesarios para Sweet Alert -->
-                <script src="../../js/sweetAlertJS/sweetalert2.all.min.js"></script>
-            <!-- Script avisos Sweet Alert -->
-                <script src="../../js/sweetAlertJS/alertasSweeAlertFrontEnd.js"></script>
         <!-- Fin Scripts Necesarios -->
-    </html>
+        
+</html>
