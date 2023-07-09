@@ -61,6 +61,7 @@
                                                     <select class="custom-select" id="AñadirImpacto" name="NameAñadirImpacto">
                                                         <option value="" disabled selected hidden>Seleccione el impacto de la noticia</option>
                                                         <option value="Positivo">Positivo</option>
+                                                        <option value="Neutro">Neutro</option>
                                                         <option value="Negativo">Negativo</option>                                                        
                                                     </select>  
                                                 </div>
@@ -74,7 +75,7 @@
                                                 </div>
                                                 <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
                                                     <label for="AñadirFuente">Fuente de la noticia</label>
-                                                    <input type="text" name="NameAñadirFuente" class="form-control" id="AñadirFuente" placeholder="Ingrese la fuente de la noticia">
+                                                    <input type="text" name="NameAñadirFuente" class="form-control" id="AñadirFuente" placeholder="Ingrese la fuente de la noticia (url)">
                                                 </div>
                                                 <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
                                                     <label for="AñadirArchivoAdjunto">Archivo adjunto</label>
@@ -82,7 +83,7 @@
                                                 </div>
                                                 <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
                                                     <label for="AñadirEnlaceAdicional">Fuentes adicionales</label>
-                                                    <input type="text" name="NameAñadirEnlaceAdicional" class="form-control" id="AñadirEnlaceAdicional" placeholder="Ingrese un enlace adicional si el archivo es mayor a 10 mb">
+                                                    <input type="text" name="NameAñadirEnlaceAdicional" class="form-control" id="AñadirEnlaceAdicional" placeholder="Ingrese un enlace adicional si el archivo es mayor a 10 mb (url)">
                                                 </div>
                                             </div>
                                             <div class="card-footer">
@@ -134,6 +135,7 @@
                                                     <select class="custom-select" id="EditarImpacto" name="NameEditarImpacto">
                                                         <option value="" disabled selected hidden>Seleccione el impacto de la noticia</option>
                                                         <option value="Positivo">Positivo</option>
+                                                        <option value="Neutro">Neutro</option>
                                                         <option value="Negativo">Negativo</option>                                                        
                                                     </select>  
                                                 </div>
@@ -255,6 +257,7 @@
                                             <select class="custom-select" id="BuscarImpacto" data-index = "4">
                                                 <option value="" selected>Seleccione impacto del usuario</option>
                                                 <option value="Positivo">Positivo</option>
+                                                <option value="Neutro">Neutro</option>
                                                 <option value="Negativo">Negativo</option>
                                             </select>
                                         </div>                                        

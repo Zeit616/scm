@@ -30,14 +30,21 @@ $(function() {
       success: function(data) {
         console.log(data);
         // Los datos se obtuvieron correctamente
-
+          console.log(data);
         // Definir los colores para el gráfico de donut chart
         var positiveColor = '#00a65a'; // Verde
         var negativeColor = '#f56954'; // Rojo
+        var neutralColor = '#808080'; // Gris
 
         // Arreglo de colores basado en los valores del gráfico de donut chart
         var backgroundColorsDonut = data.donutChart.labels.map(function(label) {
-          return label.toLowerCase() === 'positivo' ? positiveColor : negativeColor;
+          if (label.toLowerCase() === 'positivo') {
+            return positiveColor;
+          } else if (label.toLowerCase() === 'negativo') {
+            return negativeColor;
+          } else if (label.toLowerCase() === 'neutro') {
+            return neutralColor;
+          }
         });
 
         // Generar colores de fondo aleatorios para el gráfico de pie chart
@@ -63,6 +70,8 @@ $(function() {
             }
           ]
         };
+
+        
 
         var chartOptions = {
           maintainAspectRatio: false,

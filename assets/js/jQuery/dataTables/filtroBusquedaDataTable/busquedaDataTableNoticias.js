@@ -10,7 +10,7 @@ $(document).ready(function() {
     });
     $("#BuscarImpacto").change(function() {
       var Impacto = $(this).val();
-      tablaNoticias.column(4).search(Impacto).draw();
+      tablaNoticias.column(6).search(Impacto).draw();
     });
 });
   

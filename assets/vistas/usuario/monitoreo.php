@@ -103,6 +103,7 @@
                                             <select class="custom-select" id="BuscarImpacto" data-index = "4">
                                                 <option value="" selected>Seleccione impacto del usuario</option>
                                                 <option value="Positivo">Positivo</option>
+                                                <option value="Neutro">Neutro</option>
                                                 <option value="Negativo">Negativo</option>
                                             </select>
                                         </div>                                        

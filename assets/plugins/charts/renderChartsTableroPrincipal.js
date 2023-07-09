@@ -33,6 +33,17 @@ $(function () {
             pointHighlightStroke: 'rgba(255, 0, 0, 0.8)',
             data: data.negativo
           },
+          {
+            label: 'Neutro',
+            backgroundColor: 'rgba(128, 128, 128, 0.8)', // Cambiar a gris (RGB: 128, 128, 128)
+            borderColor: 'rgba(128, 128, 128, 0.8)', // Cambiar a gris (RGB: 128, 128, 128)
+            pointRadius: false,
+            pointColor: 'rgba(128, 128, 128, 0.8)', // Cambiar a gris (RGB: 128, 128, 128)
+            pointStrokeColor: '#c1c7d1',
+            pointHighlightFill: '#fff',
+            pointHighlightStroke: 'rgba(128, 128, 128, 0.8)', // Cambiar a gris (RGB: 128, 128, 128)
+            data: data.neutro
+          },
         ]
       };
 

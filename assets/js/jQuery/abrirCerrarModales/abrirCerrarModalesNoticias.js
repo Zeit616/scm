@@ -67,8 +67,35 @@ $(document).ready(function(){
             $("#VerImpactoNoticia").val(Impacto);
             $("#VerComentarioNoticia").val(Comentarios);
             $("#VerRecomendacionesNoticia").val(Recomendaciones);
-            $("#VerFuenteNoticia").val(Fuente);
-            $("#VerFuentesAdicionalesNoticia").val(EnlaceAdicional);
+            //modificacion de fuente de la noticia
+                $("#VerFuenteNoticia").hide();
+                // Eliminar cualquier botón existente
+                $("#botonVerFuenteNoticia").remove();
+
+                var $botonVerFuente = $("<button>", {
+                    id: "botonVerFuenteNoticia",
+                    text: "Ver Fuente",
+                    click: function() {
+                        window.open(Fuente, "_blank");
+                    }
+                  });
+                  $botonVerFuente.addClass("form-control btn btn-primary btn-lg");                
+                  $("#VerFuenteNoticia").after($botonVerFuente);
+            //modificacion de fuente de la noticia
+
+            //modificacion de fuente adicional
+                $("#VerFuentesAdicionalesNoticia").hide();
+                $("#botonVerFuenteNoticiaAdicional").remove();
+                var $botonVerFuenteAdicional = $("<button>", {
+                    id: "botonVerFuenteNoticiaAdicional",
+                    text: "Ver Fuente adicional",
+                    click: function() {
+                        window.open(EnlaceAdicional, "_blank");
+                    }
+                  });
+                  $botonVerFuenteAdicional.addClass("form-control btn btn-danger btn-lg");                
+                  $("#VerFuentesAdicionalesNoticia").after($botonVerFuenteAdicional);
+            //modificacion de fuente adicional
     }); 
     $('#cerrarModalVerNoticia').click(function() {
         $('#modalVerNoticia').modal('hide');

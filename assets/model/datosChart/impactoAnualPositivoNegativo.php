@@ -18,19 +18,31 @@ if ($stmt->rowCount() > 0) {
             if (!isset($monthlyData[$mes])) {
                 $monthlyData[$mes] = array(
                     'positivo' => 1,
-                    'negativo' => 0
+                    'negativo' => 0,
+                    'neutro' => 0
                 );
             } else {
                 $monthlyData[$mes]['positivo']++;
             }
-        } else {
+        } else if ($row["Impacto"] == "Negativo") {
             if (!isset($monthlyData[$mes])) {
                 $monthlyData[$mes] = array(
                     'positivo' => 0,
-                    'negativo' => 1
+                    'negativo' => 1,
+                    'neutro' => 0
                 );
             } else {
                 $monthlyData[$mes]['negativo']++;
+            }
+        } else if ($row["Impacto"] == "Neutro") {
+            if (!isset($monthlyData[$mes])) {
+                $monthlyData[$mes] = array(
+                    'positivo' => 0,
+                    'negativo' => 0,
+                    'neutro' => 1
+                );
+            } else {
+                $monthlyData[$mes]['neutro']++;
             }
         }
     }
@@ -46,6 +58,7 @@ $meses = array(
 $labels = array();
 $positivo = array();
 $negativo = array();
+$neutro = array();
 
 // Ordenar los meses en orden ascendente
 ksort($monthlyData);
@@ -55,12 +68,14 @@ foreach ($monthlyData as $mes => $data) {
     $labels[] = $nombreMes;
     $positivo[] = $data['positivo'];
     $negativo[] = $data['negativo'];
+    $neutro[] = $data['neutro'];
 }
 
 $data = array(
     'labels' => $labels,
     'positivo' => $positivo,
-    'negativo' => $negativo
+    'negativo' => $negativo,
+    'neutro' => $neutro
 );
 
 // Convertir el arreglo a formato JSON y enviarlo como respuesta
