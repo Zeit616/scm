@@ -5,6 +5,7 @@ function editarNoticia(){
     var Fecha = $("#EditarFechaNoticia").val();
     var Medio = $("#EditarMedioNoticia").val();
     var Titular = $("#EditarTitular").val();
+    var Imagen = $("#EditarImagen")[0];
     var Espacio = $("#EditarEspacio").val();
     var Periodista = $("#EditarPeriodista").val();
     var Impacto = $("#EditarImpacto").val();
@@ -17,6 +18,7 @@ function editarNoticia(){
     datos.append("Fecha", Fecha);
     datos.append("Medio", Medio);
     datos.append("Titular", Titular);
+    datos.append("Imagen", Imagen.files[0]);
     datos.append("Espacio", Espacio);
     datos.append("Periodista", Periodista);
     datos.append("Impacto", Impacto);

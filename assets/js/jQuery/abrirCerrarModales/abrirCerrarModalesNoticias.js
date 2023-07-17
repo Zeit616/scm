@@ -57,6 +57,7 @@ $(document).ready(function(){
             var Fuente = data[9];
             var ArchivoAdjunto = data[10];
             var EnlaceAdicional = data[11];
+            $("#CodNoticiaPoint").val(CodNoticia);
             $("#idCodigoDescargar").val(ArchivoAdjunto);
             $("#tituloDelModal").html('"' + Titular + '"'); 
             $("#VerFechaNoticia").val(Fecha);

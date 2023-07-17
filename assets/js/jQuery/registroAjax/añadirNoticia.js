@@ -4,6 +4,7 @@ function añadirNoticia(){
     var Fecha = $("#AñadirFechaNoticia").val();
     var Medio = $("#AñadirMedioNoticia").val();
     var Titular = $("#AñadirTitular").val();
+    var Imagen = $("#AñadirImagen")[0];
     var Espacio = $("#AñadirEspacio").val();
     var Periodista = $("#AñadirPeriodista").val();
     var Impacto = $("#AñadirImpacto").val();
@@ -15,6 +16,7 @@ function añadirNoticia(){
     datos.append("Fecha", Fecha);
     datos.append("Medio", Medio);
     datos.append("Titular", Titular);
+    datos.append("Imagen", Imagen.files[0]);
     datos.append("Espacio", Espacio);
     datos.append("Periodista", Periodista);
     datos.append("Impacto", Impacto);

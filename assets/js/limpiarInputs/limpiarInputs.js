@@ -37,6 +37,7 @@
         $("#AñadirFechaNoticia").val("");
         $("#AñadirMedioNoticia").val("");
         $("#AñadirTitular").val("");
+        $("#AñadirImagen").val(null);
         $("#AñadirEspacio").val("");
         $("#AñadirPeriodista").val("");
         $("#AñadirImpacto").val("");

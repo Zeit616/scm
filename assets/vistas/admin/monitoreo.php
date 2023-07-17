@@ -49,6 +49,10 @@
                                                     <input type="text" name="NameAñadirTitular" class="form-control" id="AñadirTitular" placeholder="Ingrese el titular">
                                                 </div>
                                                 <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
+                                                    <label for="AñadirImagen">Imagen</label>
+                                                    <input type="file" name="NameImagen" class="form-control" id="AñadirImagen">
+                                                </div>
+                                                <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
                                                     <label for="AñadirEspacio">Espacio</label>
                                                     <textarea class="text-area form-control" name="NameAñadirEspacio" id="AñadirEspacio" cols="10" rows="10"></textarea>
                                                 </div>
@@ -123,6 +127,10 @@
                                                     <input type="text" name="NameEditarTitular" class="form-control" id="EditarTitular" placeholder="Ingrese el titular">
                                                 </div>
                                                 <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
+                                                    <label for="EditarImagen">Imagen</label>
+                                                    <input type="file" name="NameEditarImagen" class="form-control" id="EditarImagen">
+                                                </div>
+                                                <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
                                                     <label for="EditarEspacio">Espacio</label>
                                                     <textarea class="text-area form-control" name="NameEditarEspacio" id="EditarEspacio" cols="10" rows="10"></textarea>
                                                 </div>
@@ -181,6 +189,7 @@
                                     </div>
                                     <div class="modal-body bg-secondary ">                                    
                                         <div class="card-body row">
+                                            <input type="text" id="CodNoticiaPoint" disabled style="display: none;">
                                             <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
                                                 <label for="VerFechaNoticia" class="form-label">Fecha de la noticia</label>
                                                 <input type="date" class="form-control" id="VerFechaNoticia" disabled>
@@ -192,6 +201,10 @@
                                             <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
                                                 <label for="VerTitularNoticia">Titular</label>
                                                 <input type="text" class="form-control" id="VerTitularNoticia" disabled>
+                                            </div>
+                                            <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
+                                                <label for="VerImagen">Archivo adjunto</label>                                                
+                                                <button type="button" class="form-control btn btn-warning btn-lg" id="VerImagen">Ver Imagen</button>
                                             </div>
                                             <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
                                                 <label for="VerEspacioNoticia">Espacio</label>
@@ -231,6 +244,22 @@
                                 </div>
                             </div>
                         </div> 
+                    <!-- Modal "ver imagen" -->
+                        <div class="modal fade" id="modalVerImagen">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-secondary">
+                                        <h4 class="modal-title">Imagen</h4>
+                                        <button type="button" style="color: white;" class="close" id="cerrarModalVerImagen">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-secondary d-flex justify-content-center">
+                                        <img src="" style="display: none;" id="Imagen" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     <!-- Tarjeta colapsable de filtrar búsqueda -->                
                         <div class="col-12">
                             <div class="card card-primary collapsed-card">
@@ -365,4 +394,6 @@
         <script src="../../js/jQuery/dataTables/filtroBusquedaDataTable/busquedaDataTableNoticias.js"></script>
     <!-- Descargar archivos adjuntos -->
         <script src="../../js/descarga/descargaArchivoNoticia.js"></script>
+    <!-- Ver imagen de noticia -->
+        <script src="../../js/jQuery/verImagen/verImagenNoticia.js"></script>
 <!-- Fin Scripts Necesarios para funcionamiento --> 
