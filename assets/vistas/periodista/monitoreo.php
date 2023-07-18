@@ -49,7 +49,7 @@
                                                     <input type="text" name="NameAñadirTitular" class="form-control" id="AñadirTitular" placeholder="Ingrese el titular">
                                                 </div>
                                                 <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
-                                                    <label for="AñadirImagen">Imagen</label>
+                                                    <label for="AñadirImagen">Alcance del medio</label>
                                                     <input type="file" name="NameImagen" class="form-control" id="AñadirImagen">
                                                 </div>
                                                 <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
@@ -127,7 +127,7 @@
                                                     <input type="text" name="NameEditarTitular" class="form-control" id="EditarTitular" placeholder="Ingrese el titular">
                                                 </div>
                                                 <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
-                                                    <label for="EditarImagen">Imagen</label>
+                                                    <label for="EditarImagen">Alcance del medio</label>
                                                     <input type="file" name="NameEditarImagen" class="form-control" id="EditarImagen">
                                                 </div>
                                                 <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
@@ -203,8 +203,8 @@
                                                 <input type="text" class="form-control" id="VerTitularNoticia" disabled>
                                             </div>
                                             <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
-                                                <label for="VerImagen">Archivo adjunto</label>                                                
-                                                <button type="button" class="form-control btn btn-warning btn-lg" id="VerImagen">Ver Imagen</button>
+                                                <label for="VerImagen">Alcance del medio</label>                                                
+                                                <button type="button" class="form-control btn btn-warning btn-lg" id="VerImagen">Alcance del medio</button>
                                             </div>
                                             <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
                                                 <label for="VerEspacioNoticia">Espacio</label>
@@ -283,7 +283,7 @@
                             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
                                 <div class="modal-content">
                                     <div class="modal-header bg-secondary">
-                                        <h4 class="modal-title">Imagen</h4>
+                                        <h4 class="modal-title">Alcance del medio</h4>
                                         <button type="button" style="color: white;" class="close" id="cerrarModalVerImagen">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
