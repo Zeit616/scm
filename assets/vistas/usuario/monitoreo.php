@@ -41,8 +41,10 @@
                                                 <input type="text" class="form-control" id="VerTitularNoticia" disabled>
                                             </div>
                                             <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
-                                                <label for="VerImagen">Alcance del medio</label>                                                
-                                                <button type="button" class="form-control btn btn-warning btn-lg" id="VerImagen">Alcance del medio</button>
+                                                <label for="VerImagen">Imagen</label>   
+                                                <br>            
+                                                <img src="" style="display: none;" id="ImagenenModal" class="imagenNoticia" alt="">
+                                                <button type="button" class="form-control btn btn-warning btn-lg" id="VerImagen">Imagen</button>
                                             </div>
                                             <div class="coll-lg-4 col-md-6 col-sm-12 form-group">
                                                 <label for="VerEspacioNoticia">Espacio</label>
@@ -93,7 +95,7 @@
                                         </button>
                                     </div>
                                     <div class="modal-body bg-secondary d-flex justify-content-center">
-                                        <img src="" style="display: none;" id="Imagen" alt="">
+                                        <img src="" style="display: none;" class="imagenNoticia" id="Imagen" alt="">
                                     </div>
                                 </div>
                             </div>

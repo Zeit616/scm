@@ -1,3 +1,13 @@
+<?php
+  header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
+  header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
+?>
+
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Last-Modified" content="0">
+<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+<meta http-equiv="Pragma" content="no-cache">
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -23,6 +33,8 @@
                 <link rel="stylesheet" href="../../css/adminlte/correcciones.css"> 
             <!--Swet Alert Estilos-->
                 <link rel="stylesheet" href="../../css/sweetAlert2/sweetalert2.min.css">                  
+            <!--Estilos para imagenes de noticia-->
+                <link rel="stylesheet" href="../../css/estilosNoticia.css">                  
         
         <!-- Estilos Necesarios -->
 

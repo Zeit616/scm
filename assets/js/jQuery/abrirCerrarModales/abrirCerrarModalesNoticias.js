@@ -68,6 +68,27 @@ $(document).ready(function(){
             $("#VerImpactoNoticia").val(Impacto);
             $("#VerComentarioNoticia").val(Comentarios);
             $("#VerRecomendacionesNoticia").val(Recomendaciones);
+
+            //Ver imagen en modal
+            var archivoImagen = "Imagen" + $("#CodNoticiaPoint").val();
+            var ruta = "../../storage/";
+        
+            // Obtener todas las imágenes que coincidan con el nombre del archivo
+            $.ajax({
+                url: ruta,
+                success: function(data) {
+                    $(data).find("a").attr("href", function(i, val) {
+                        // Verificar si el nombre del archivo coincide sin importar la extensión
+                        if (val.startsWith(archivoImagen)) {
+                            // Establecer la ruta de la imagen en el atributo src de la etiqueta <img>
+                            $("#ImagenenModal").attr("src", ruta + val);
+                            $("#ImagenenModal").show();
+                            return false; // Detener la iteración después de encontrar la primera coincidencia
+                        }
+                    });
+                }
+            });
+
             //modificacion de fuente de la noticia
                 $("#VerFuenteNoticia").hide();
                 // Eliminar cualquier botón existente
