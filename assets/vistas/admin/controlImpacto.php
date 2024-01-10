@@ -32,8 +32,17 @@
                               </button>
                             </div>
                           </div>
-                          <div class="card-body">
-                              <div class="chart">
+                          <div class="card-body row">
+                          <!-- Filtros de búsqueda -->
+                              <div class="col-lg-6 col-md-12">
+                                  <label for="inicioBusqueda" class="form-label">Desde</label>
+                                  <input type="date" class="form-control" id="inicioBusqueda">
+                              </div> 
+                              <div class="col-lg-6 col-md-12">
+                                  <label for="finBusqueda" class="form-label">Hasta</label>
+                                  <input type="date" class="form-control" id="finBusqueda">
+                              </div> 
+                              <div class="chart col-12">
                                   <canvas id="ImpactoAnualPositivoNegativoBarChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
                               </div>
                           </div>

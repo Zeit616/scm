@@ -1,8 +1,23 @@
 <?php
 require_once "../conexcionDataBase.php";
-$currentYear = date('Y');
-$stmt = conection::conectar()->prepare("SELECT FechaNoticia, Impacto FROM noticia WHERE YEAR(FechaNoticia) = :currentYear");
-$stmt->bindParam(':currentYear', $currentYear);
+
+// Obtener fechas desde los parámetros GET
+$inicioBusqueda = isset($_GET['inicioBusqueda']) ? $_GET['inicioBusqueda'] : null;
+$finBusqueda = isset($_GET['finBusqueda']) ? $_GET['finBusqueda'] : null;
+
+// Establecer consulta SQL base
+if ($inicioBusqueda && $finBusqueda) {
+    // Si se proporcionan fechas, filtrar por rango de fechas
+    $stmt = conection::conectar()->prepare("SELECT FechaNoticia, Impacto FROM noticia WHERE FechaNoticia BETWEEN :inicio AND :fin");
+    $stmt->bindParam(':inicio', $inicioBusqueda);
+    $stmt->bindParam(':fin', $finBusqueda);
+} else {
+    // Si no se proporcionan fechas, obtener datos para todo el año actual
+    $currentYear = date('Y');
+    $stmt = conection::conectar()->prepare("SELECT FechaNoticia, Impacto FROM noticia WHERE YEAR(FechaNoticia) = :currentYear");
+    $stmt->bindParam(':currentYear', $currentYear);
+}
+
 $stmt->execute();
 
 $monthlyData = array(); // Arreglo para almacenar los datos agrupados por mes
@@ -24,7 +39,7 @@ if ($stmt->rowCount() > 0) {
             } else {
                 $monthlyData[$mes]['positivo']++;
             }
-        } else if ($row["Impacto"] == "Negativo") {
+        } elseif ($row["Impacto"] == "Negativo") {
             if (!isset($monthlyData[$mes])) {
                 $monthlyData[$mes] = array(
                     'positivo' => 0,
@@ -34,7 +49,7 @@ if ($stmt->rowCount() > 0) {
             } else {
                 $monthlyData[$mes]['negativo']++;
             }
-        } else if ($row["Impacto"] == "Neutro") {
+        } elseif ($row["Impacto"] == "Neutro") {
             if (!isset($monthlyData[$mes])) {
                 $monthlyData[$mes] = array(
                     'positivo' => 0,
